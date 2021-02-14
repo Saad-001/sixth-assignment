@@ -13,21 +13,6 @@ let sliders = [];
 // to create your own api key
 const KEY = '20264754-e10e72d67787917de5a2999eb';
 
-// show images 
-// const showImages = (images) => {
-//   toggleSpinner(true);
-//   imagesArea.style.display = 'block';
-//   gallery.innerHTML = '';
-//   // show gallery title
-//   galleryHeader.style.display = 'flex';
-//   images.forEach(image => {
-//     let div = document.createElement('div');
-//     div.className = 'col-lg-3 col-md-4 col-xs-6 img-item mb-2';
-//     div.innerHTML = ` <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}">`;
-//     gallery.appendChild(div)
-//   })
-
-// }
 const getImages = (query) => {
   const url = (`https://pixabay.com/api/?key=${KEY}&q=${query}&image_type=photo&pretty=true`)
   toggleSpinner();
